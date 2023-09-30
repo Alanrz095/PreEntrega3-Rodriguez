@@ -55,7 +55,7 @@ function ejecutar(){
     switch(+(numero)){
         case 30:
             datos.forEach((dato) => {
-                entrada += dato.interes();
+                entrada = dato.interes();
             })
             nuevoDiv.innerHTML = `<p>Banco: ${formato2[formato2.length-1].banco}<\p>
                                   <p>CBU: ${formato2[formato2.length-1].cbu}<\p>
@@ -66,7 +66,7 @@ function ejecutar(){
         break;
         case 60:
             datos.forEach((dato) => {
-                entrada += 2 * (dato.interes());
+                entrada = 2 * (dato.interes());
             })
             nuevoDiv.innerHTML = `<p>Banco: ${formato2[formato2.length-1].banco}<\p>
                                   <p>CBU: ${formato2[formato2.length-1].cbu}<\p>
@@ -77,7 +77,7 @@ function ejecutar(){
         break;
         case 90:
             datos.forEach((dato) => {
-                entrada += 4 * (dato.interes());
+                entrada = 4 * (dato.interes());
             })
             nuevoDiv.innerHTML = `<p>Banco: ${formato2[formato2.length-1].banco}<\p>
                                   <p>CBU: ${formato2[formato2.length-1].cbu}<\p>
@@ -88,7 +88,7 @@ function ejecutar(){
         break;
         case 120:
             datos.forEach((dato) => {
-                entrada += 8 * (dato.interes());
+                entrada = 8 * (dato.interes());
             })
             nuevoDiv.innerHTML = `<p>Banco: ${formato2[formato2.length-1].banco}<\p>
                                   <p>CBU: ${formato2[formato2.length-1].cbu}<\p>
