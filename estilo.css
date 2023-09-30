@@ -1,0 +1,9 @@
+*{
+    box-sizing: border-box;
+}
+
+div{
+    position: relative;
+    left: 20em;
+    bottom: 15em;
+}

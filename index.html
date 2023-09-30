@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacé crecer tu plata!</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <form id="formulario" method="post">
+        <label for="entidadBancaria">Banco:</label><br>
+        <input type="text" id="entidadBancaria" name="banco" value="" placeholder="Banco a depositar"><br><br>
+        <label for="cuentaBancaria">CBU:</label><br>
+        <input type="number" id="cuentaBancaria" name="cbu" placeholder="Cuenta a depositar"><br><br>
+        <label for="plataInversion">Dinero a invertir:</label><br>
+        <input type="number" id="plataInversion" name="capital"><br><br>
+        <label for="plazoFijo">Plazo:</label><br>
+        <select class="form-select w-25 d-inline" id="plazoFijo">
+            <option value="30">30 días</option>
+            <option value="60">60 días</option>
+            <option value="90">90 días</option>
+            <option value="120">120 días</option>
+        </select>
+    </form>
+    <button class="btn btn-secondary me-md-2 w-25" id="boton" type="button">Calcular</button>
+    <script src="script.js"></script>
+</body>
+</html>
